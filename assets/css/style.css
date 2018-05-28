@@ -4,7 +4,7 @@ html {
 
 body {
 	font: 1em/1.25em 'Arial', 'Helvetica Neue', Helvetica, sans-serif;;
-	background: url('images/crisp_paper_ruffles.png') repeat #d2d7dd;
+	background: url('../images/crisp_paper_ruffles.png') repeat #d2d7dd;
 	color: #777;
 	min-height: calc(100% - 18.5em);
 	padding-bottom: 10em;
@@ -181,6 +181,24 @@ input::placeholder {
 
 /*We're going max-width cuz mobile first is for cowards*/
 
-@media screen and (max-width: 780px)  {
-	
+@media screen and (max-width: 980px)  {
+	section {
+		padding: 0 2.5%;
+	}
+	main section {
+		width: 60%;
+		margin-right: 35%;
+	}
+
+	nav ul {
+		margin-right: 0;
+	}
+
+	.img-link {
+		margin-right: 4.5%;
+
+	}
+	.img-link:nth-child(odd){
+		margin-right: 0;
+	}
 }
